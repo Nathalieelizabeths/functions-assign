@@ -24,20 +24,17 @@ console.log(stockarray)
 
 
 //Write a function to update the stock quantity of an existing item.
-function update(stock,quantity){
-    stockquantity[5]=80
+function update(){
+    stockquantity[5]=1000
     console.log(stockquantity)
 }
-update("persil",80)
+update()
 //Write a function to calculate the total number of items in the inventory.
-function addall(quantity){
-    let sum=0;
-    stockquantity.forEach(element => {
-        sum+=element
-    });
-    console.log(sum);
+function addall(){
+   return stockarray.length
 }
-addall(stockquantity)
+console.log(addall(stockarray))
+
 
 //Write a function to find the item with the lowest stock quantity.
 let min = Math.min(...stockquantity)
